@@ -601,4 +601,3 @@ Este proyecto fue desarrollado con fines académicos para demostrar la implement
 La aplicación no procesa pagos reales ni almacena información bancaria.
 
 # CIB302-SportyStyle-tienda-virtual
-
