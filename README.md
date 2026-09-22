@@ -196,7 +196,7 @@ El flujo funciona de la siguiente manera:
 
 La aplicación delega a Auth0 la gestión de la sesión y los tokens. No se implementa una validación manual de tokens JWT.
 
-El SDK de Auth0 para aplicaciones SPA utiliza el flujo de redirección para autenticar al usuario y luego completar el retorno a la aplicación mediante la URL configurada.[web:1110]
+El SDK de Auth0 para aplicaciones SPA utiliza el flujo de redirección para autenticar al usuario y luego completar el retorno a la aplicación mediante la URL configurada.
 
 La URL local utilizada en el proyecto es:
 
