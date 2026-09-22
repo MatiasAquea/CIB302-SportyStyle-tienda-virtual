@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏋️ CIB302 - SportyStyle Tienda Virtual
 
 Mini aplicación web desarrollada para la actividad práctica sumativa de **Taller de Plataformas Web**.
