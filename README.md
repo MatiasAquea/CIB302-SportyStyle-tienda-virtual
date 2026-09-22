@@ -599,6 +599,6 @@ Este proyecto fue desarrollado con fines académicos para demostrar la implement
 - Mejora de experiencia de usuario mediante zoom de imágenes.
 
 La aplicación no procesa pagos reales ni almacena información bancaria.
-=======
+
 # CIB302-SportyStyle-tienda-virtual
->>>>>>> 139ae408184eacfa2a9812a6dfebe9dd4fa1a563
+
