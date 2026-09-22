@@ -1,0 +1,17 @@
+{
+  "name": "sportystyle",
+  "version": "1.0.0",
+  "description": "> Mini aplicación web desarrollada para la actividad práctica sumativa de **Taller de Plataformas Web**.  \r > Simula una tienda virtual de ropa y accesorios deportivos con **Auth0**, **Session Storage** y una experiencia de compra simple e intuitiva.",
+  "main": "server.js",
+  "scripts": {
+  "start": "node server.js",
+  "cert:generate": "bash scripts/generate-local-cert.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

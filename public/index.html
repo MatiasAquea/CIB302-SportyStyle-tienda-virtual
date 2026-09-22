@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SportyStyle - Tienda deportiva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- SDK de Auth0 para SPA -->
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+</head>
+<body>
+  <header>
+    <div id="brand">
+      <div class="brand-name">
+        <span class="brand-logo">Sporty</span><span class="brand-logo accent">Style</span>
+      </div>
+      <div class="brand-tagline">Tu tienda deportiva online</div>
+    </div>
+
+    <div id="auth-section">
+      <button id="btn-login">Iniciar sesión</button>
+      <button id="btn-logout" style="display:none;">Cerrar sesión</button>
+      <span id="welcome-msg"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Quiénes somos</h2>
+
+      <p>
+        En SportyStyle nos especializamos en ropa y accesorios deportivos para personas que disfrutan
+        entrenar en el gimnasio, al aire libre o practicando su deporte favorito. Nuestro objetivo es
+        ofrecer productos cómodos, funcionales y con estilo, para que puedas concentrarte en rendir al
+        máximo en cada sesión de entrenamiento.
+      </p>
+
+      <p>
+        En esta tienda virtual encontrarás camisetas técnicas, pantalones y accesorios seleccionados
+        para acompañarte en todo tu recorrido deportivo. Explora las categorías, agrega tus productos
+        al carrito y completa tu compra de manera rápida y sencilla, como si estuvieras en una tienda
+        online real.
+      </p>
+    </section>
+
+    <section id="highlights">
+      <div class="highlight-card">
+        <h3>Productos de calidad</h3>
+        <p>
+          Prendas y accesorios seleccionados para ofrecer comodidad, durabilidad y buen ajuste
+          durante tus rutinas en gimnasio, running o deportes al aire libre.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Compra fluida y segura</h3>
+        <p>
+          Navega por las categorías, agrega productos al carrito y confirma tus datos de envío
+          en una experiencia simple, clara y pensada para el usuario.
+        </p>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2>Productos</h2>
+      <div id="product-list"></div>
+    </section>
+
+    <section id="cart">
+      <h2>Carrito de compras</h2>
+      <div id="cart-items"></div>
+
+      <p class="cart-total-text">
+        Total: $<span id="cart-total">0</span>
+      </p>
+    </section>
+
+    <section id="checkout">
+      <h2>Datos de pago y despacho</h2>
+
+      <form id="checkout-form">
+        <label for="full-name">Nombre completo</label>
+        <input type="text" id="full-name" required>
+
+        <label for="address">Dirección de envío</label>
+        <input type="text" id="address" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Teléfono</label>
+        <input type="text" id="phone" required>
+
+        <button type="submit">Confirmar compra</button>
+      </form>
+
+      <div id="confirmation" style="display:none;">
+        <h3>Gracias por tu compra</h3>
+        <pre id="order-details"></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SportyStyle &copy; 2026 · Proyecto académico de tienda virtual.</p>
+  </footer>
+
+  <div id="image-modal" class="image-modal">
+    <button id="modal-close" class="modal-close" aria-label="Cerrar imagen">
+      &times;
+    </button>
+
+    <div class="image-modal-content">
+      <img id="modal-image" src="" alt="">
+      <p id="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
