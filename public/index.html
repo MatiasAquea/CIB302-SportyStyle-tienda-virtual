@@ -90,7 +90,7 @@
         <input type="email" id="email" required>
 
         <label for="phone">Teléfono</label>
-        <input type="text" id="phone" required>
+        <input type="tel" id="phone" required pattern="[0-9]{9}" minlength="9" maxlength="9" title="Ingresa un teléfono válido de 9 dígitos">
 
         <button type="submit">Confirmar compra</button>
       </form>
